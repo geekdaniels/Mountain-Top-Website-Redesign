@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mountain  Top University</title>
+        <meta charset="utf-8"/>
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/png" href="img/logo.png" />
+        <meta name="theme-color" content="#000">
+        <meta name="msapplication-navbutton-color" content="#4a148c">
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" type="text/css" rel="stylesheet"/>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="js/init.js"></script>
+
+        <!---///////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//		Scripts
+//
+///////////////////////////////////////////////////////////////////////////////////////////////////--> 
+
+        <script type='text/javascript' src='js/jquery.mobile.customized.min.js'></script>
+        <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+        <script type='text/javascript' src='js/camera.min.js'></script> 
+        <style>
+            .dropdown-content.nested {
+                overflow-y: visible !important;
+            }
+
+            .dropdown-content .dropdown-content {
+                margin-left: 100% !important;
+                background-color: #ba68c8 !important;
+            }
+            .dropdown-content li:hover, .dropdown-content li.active, .dropdown-content li.selected {
+                background-color: #ba68c8 !important;
+            }
+
+            .dropdown-content li.active.selected {
+                background-color: #e1e1e1;
+            }
+            ul.nest {
+                width: 450px !important;
+            }
+            #cba, #hms {
+                width: 250px !important;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="nav1" style="height:75px; padding:5px;">
+            <div class="nav-wrapper container">
+                <div class="row">
+                    <div class="col m6 s12">
+                        <a href="index.php" class="left brand-logo"><img src="img/mtu1.png"  class="responsive-img"/></a> 
+                    </div>
+                </div> 
+            </div>
+        </nav>
+        <nav class="purple lighten-2">
+            <div class="nav-wrapper container" >       
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons ">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.php" class="waves-effect waves-light">HOME</a></li>
+                    <li><a href="!#" href="!#" class="dropdown-button waves-effect waves-light" data-activates='about' data-beloworigin="true">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="about" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/history.php">Historical Background</a></li>
+                        <li><a href="http://mtu.edu.ng/vision.php">Vision and Mission</a></li>
+                        <li><a href="http://mtu.edu.ng/Dress%20Code.pdf">Dress Code</a></li> 
+                        <li><a href="http://mtu.edu.ng/hostel.php">Hostel Information</a></li>
+                        <li><a href="http://mtu.edu.ng/Registration%20of%20Contractors.pdf">Contractor's Registration Guideline</a></li> 
+                    </ul>
+
+                    <li style="width:150px;">
+                        <a href="!#" class="dropdown-button waves-effect waves-light" data-activates='academics' data-beloworigin="true" >ACADEMICS<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <ul id="academics" class="dropdown-content nested">             
+                        <li>
+                            <a class="dropdown-button d" href="#" data-activates='college' data-alignment="left">Colleges<i class="material-icons right">arrow_drop_down</i></a></li>
+
+                        <li><a href="http://mtu.edu.ng/2016-2017%20Academic%20Calendar%20Second%20Semester.pdf">2016-2017 Academic Calender</a></li>
+                        <li><a href="http://admin.edusocialapp.com/">Edu Social</a></li>
+
+                    </ul>
+                    <ul id="college" class="dropdown-content nested nest">
+                        <li>
+                            <a class="dropdown-button" href="#" data-activates='cba' data-alignment="left"> College of Basic and Applied Science <i class="material-icons right">arrow_drop_down</i> </a></li>
+
+                        <li>
+                            <a class="dropdown-button d" href="#" data-activates='hms' data-alignment="left">College of Humanities, Management and Social Sciences <i class="material-icons right">arrow_drop_down</i></a>
+                        </li>
+
+
+                    </ul>
+
+                    <ul id="cba" class="dropdown-content" style="min-width: 250px !important;">
+                        <li><a href="http://mtu.edu.ng/bio.php">Biological sciences</a></li>
+                        <li><a href="http://mtu.edu.ng/chemical.php">Chemical Sciences</a></li>
+                        <li><a href="http://mtu.edu.ng/cmp.php">Computer Science and Mathematics</a></li>
+                        <li><a href="http://mtu.edu.ng/fst.php">Food Science and Technology</a></li>
+                        <li><a href="http://mtu.edu.ng/geophysics.php">Geosciences</a></li>
+                        <li><a href="http://mtu.edu.ng/physics.php">Physics</a></li>
+                    </ul>
+
+                    <ul id="hms" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/acc.php">Accounting and Finance</a></li>
+                        <li><a href="http://mtu.edu.ng/bus.php">Business Administration</a></li>
+                        <li><a href="http://mtu.edu.ng/econs.php">Economics</a></li>
+                        <li><a href="http://mtu.edu.ng/lang.php">Languages</a></li>
+                        <li><a href="http://mtu.edu.ng/masscom.php">Mass Communication</a></li>
+                        <li><a href="http://mtu.edu.ng/music.php">Music</a></li>
+                        <li><a href="http://mtu.edu.ng/phil.php">Philosophy and Religion</a></li>
+                    </ul>
+
+
+
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="student" datahover="true" data-beloworigin="true">STUDENTS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="student" class="dropdown-content">
+                        <li><a href="http://applications.mtu.edu.ng/(S(y2qpc5zoaglolvexxwd3j525))/default.aspx">2017/2018 Prospective Students</a></li>
+                        <!-- <li><a href="successstory.php">2016/2017 Provisional Admission List</a></li>-->
+                        <li><a href="http://studentportal.mtu.edu.ng/(S(ygumbop4k35uprasyp5uosss))/StudentLoginPage.aspx">Undergraduates</a></li>
+                        <li><a href="http://mtu.edu.ng/Catch-Up%20Programme.pdf">Catch-Up Programme </a></li>
+                        <li><a href="http://mtu.edu.ng/20162017%20Approved%20School%20Fees.pdf">Mtu 2016/2017 Tuition</a></li>
+                        <li><a href="http://mtu.edu.ng/guidelines%20for%20inter-university%20transfer.pdf">Inter-University Transfer</a></li>
+                        <li><a href="http://mtu.edu.ng/Affidavit%20for%20new%20students%20-%202016.pdf">Affidavit for new Students</a></li>
+                    </ul>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="centre" datahover="true" data-beloworigin="true">CENTRES<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="centre" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/cem.php">Centre of Excellence in Music</a></li>
+                        <li><a href="http://mtu.edu.ng/cri.php">Centre for Research, Innovation and Collaboration</a></li>
+                        <li><a href="http://mtu.edu.ng/ces.php">Centre for Enterprenural Skill</a></li>
+                        <li><a href="http://mtu.edu.ng/cce.php">Centre for Continuing Education</a></li>          
+                    </ul>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="library" datahover="true" data-beloworigin="true">LIBRARY<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="library" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/library/index.php">Library Website</a></li>
+                        <li><a href="http://lib.mtu.edu.ng/">Library Portal</a></li>
+                    </ul>
+
+                    <li><a href="#!" class="waves-effect waves-light">E-LEARNING</a></li>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="life" datahover="true" data-beloworigin="true">LIFE @ MTU<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="life" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/chapel.php">MTU Chapel</a></li>
+                        <li><a href="http://mtu.edu.ng/lecture.php">MTU Lecture Series</a></li>
+                        <li><a href="http://mtu.edu.ng/cafetaria.php">MTU Cafeteria</a></li>
+                        <li><a href="http://mtu.edu.ng/e-Bulletin%20for%20May%202017.pdf">MTU Bulletin</a></li>
+                        <li><a href="http://mtu.edu.ng/vacancy.php"> MTU Vacancy</a></li>
+                        <li><a href="http://mtu.edu.ng/siwes.php"> MTU Siwes</a></li>
+                    </ul>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="resource" datahover="true" data-beloworigin="true">RESOURCES</a></li>
+                    <ul id="resource" class="dropdown-content">
+                        <li><a href="http://www.pdgm.com/">Paradigm</a></li>
+                    </ul>
+
+                    <li><a href="contact.php" class="waves-effect waves-light">CONTACT US</a></li>
+                </ul>
+
+                <!--mobile navigation-->
+                <ul class="side-nav white-text" id="mobile-demo">
+                    <li><a href="index.php" class="waves-effect waves-light">HOME</a></li>
+                    <li><a href="!#" href="!#" class="dropdown-button waves-effect waves-light" data-activates='about2' data-beloworigin="true">ABOUT US<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="about2" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/history.php">Historical Background</a></li>
+                        <li><a href="http://mtu.edu.ng/vision.php">Vision and Mission</a></li>
+                        <li><a href="http://mtu.edu.ng/Dress%20Code.pdf">Dress Code</a></li> 
+                        <li><a href="http://mtu.edu.ng/hostel.php">Hostel Information</a></li>
+                        <li><a href="http://mtu.edu.ng/Registration%20of%20Contractors.pdf">Contractor's Registration Guideline</a></li> 
+                    </ul>
+
+                    <li style="">
+                        <a href="!#" class="dropdown-button waves-effect waves-light" data-activates='academic' data-beloworigin="true" >ACADEMICS<i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                    <ul id="academic" class="dropdown-content">             
+                        <li>
+                            <a class="dropdown-button" href="#" data-activates='college2' data-beloworigin="true">Colleges<i class="material-icons right">arrow_drop_down</i></a></li>
+
+                        <li><a href="http://mtu.edu.ng/2016-2017%20Academic%20Calendar%20Second%20Semester.pdf">2016-2017 Academic Calender</a></li>
+                        <li><a href="http://admin.edusocialapp.com/">Edu Social</a></li>
+                    </ul>
+                    <ul id="college2" class="dropdown-content nested">
+                        <li>
+                            <a style="font-size: 12px;" class="dropdown-button" href="#" data-activates='cba2' data-alignment="right"> College of Basic and Applied Science <i class="material-icons right">arrow_drop_down</i> </a></li>
+
+                        <li>
+                            <a style="font-size: 12px;" class="dropdown-button" href="#" data-activates='hms2' data-alignment="left">College of Humanities, Management and Social Sciences <i class="material-icons right">arrow_drop_down</i></a>
+                        </li>
+
+
+                    </ul>
+
+                    <ul id="cba2" class="dropdown-content" style="min-width: 250px !important;">
+                        <li><a href="http://mtu.edu.ng/bio.php">Biological sciences</a></li>
+                        <li><a href="http://mtu.edu.ng/chemical.php">Chemical Sciences</a></li>
+                        <li><a href="http://mtu.edu.ng/cmp.php">Computer Science and Mathematics</a></li>
+                        <li><a href="http://mtu.edu.ng/fst.php">Food Science and Technology</a></li>
+                        <li><a href="http://mtu.edu.ng/geophysics.php">Geosciences</a></li>
+                        <li><a href="http://mtu.edu.ng/physics.php">Physics</a></li>
+                    </ul>
+
+                    <ul id="hms2" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/acc.php">Accounting and Finance</a></li>
+                        <li><a href="http://mtu.edu.ng/bus.php">Business Administration</a></li>
+                        <li><a href="http://mtu.edu.ng/econs.php">Economics</a></li>
+                        <li><a href="http://mtu.edu.ng/lang.php">Languages</a></li>
+                        <li><a href="http://mtu.edu.ng/masscom.php">Mass Communication</a></li>
+                        <li><a href="http://mtu.edu.ng/music.php">Music</a></li>
+                        <li><a href="http://mtu.edu.ng/phil.php">Philosophy and Religion</a></li>
+                    </ul>
+
+
+
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="student2" datahover="true" data-beloworigin="true">STUDENTS<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="student2" class="dropdown-content">
+                        <li><a href="http://applications.mtu.edu.ng/(S(y2qpc5zoaglolvexxwd3j525))/default.aspx">2017/2018 Prospective Students</a></li>
+                        <!-- <li><a href="successstory.php">2016/2017 Provisional Admission List</a></li>-->
+                        <li><a href="http://studentportal.mtu.edu.ng/(S(ygumbop4k35uprasyp5uosss))/StudentLoginPage.aspx">Undergraduates</a></li>
+                        <li><a href="http://mtu.edu.ng/Catch-Up%20Programme.pdf">Catch-Up Programme </a></li>
+                        <li><a href="http://mtu.edu.ng/20162017%20Approved%20School%20Fees.pdf">Mtu 2016/2017 Tuition</a></li>
+                        <li><a href="http://mtu.edu.ng/guidelines%20for%20inter-university%20transfer.pdf">Inter-University Transfer</a></li>
+                        <li><a href="http://mtu.edu.ng/Affidavit%20for%20new%20students%20-%202016.pdf">Affidavit for new Students</a></li>
+                    </ul>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="centre2" datahover="true" data-beloworigin="true">CENTRES<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="centre2" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/cem.php">Centre of Excellence in Music</a></li>
+                        <li><a href="http://mtu.edu.ng/cri.php">Centre for Research, Innovation and Collaboration</a></li>
+                        <li><a href="http://mtu.edu.ng/ces.php">Centre for Enterprenural Skill</a></li>
+                        <li><a href="http://mtu.edu.ng/cce.php">Centre for Continuing Education</a></li>          
+                    </ul>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="library2" datahover="true" data-beloworigin="true">LIBRARY<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="library2" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/library/index.php">Library Website</a></li>
+                        <li><a href="http://lib.mtu.edu.ng/">Library Portal</a></li>
+                    </ul>
+
+                    <li><a href="#!" class="waves-effect waves-light">E-LEARNING</a></li>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="life2" datahover="true" data-beloworigin="true">LIFE @ MTU<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <ul id="life2" class="dropdown-content">
+                        <li><a href="http://mtu.edu.ng/chapel.php">MTU Chapel</a></li>
+                        <li><a href="http://mtu.edu.ng/lecture.php">MTU Lecture Series</a></li>
+                        <li><a href="http://mtu.edu.ng/cafetaria.php">MTU Cafeteria</a></li>
+                        <li><a href="http://mtu.edu.ng/e-Bulletin%20for%20May%202017.pdf">MTU Bulletin</a></li>
+                        <li><a href="http://mtu.edu.ng/vacancy.php"> MTU Vacancy</a></li>
+                        <li><a href="http://mtu.edu.ng/siwes.php"> MTU Siwes</a></li>
+                    </ul>
+
+                    <li><a href="#!" class="dropdown-button waves-effect waves-light" data-activates="resource2" datahover="true" data-beloworigin="true">RESOURCES</a></li>
+                    <ul id="resource2" class="dropdown-content">
+                        <li><a href="http://www.pdgm.com/">Paradigm</a></li>
+                    </ul>
+
+                    <li><a href="contact.php" class="waves-effect waves-light">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Body contents  come here-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col m3 s12">
+                    <div class="card" style="background-image:url(img/3.jpg); background-repeat: no-repeat; background-position: center center;">
+                        <div class="card-content">
+                            <p><span style="font-weight:500;">For Procedure to apply for 2017/2018 Admission.</span></p>
+                            <button class="btn purple lighten-2">Click Here</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3 s12">
+                    <div class="card" style="background-image:url(img/3.jpg); background-repeat: no-repeat; background-position: center center;">
+                        <div class="card-content">
+                            <p><span style="font-weight:500;">For Catch up programme for the 2016/2017 academic session.</span></p>
+                            <button class="btn purple lighten-2">Click Here</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3 s12">
+                    <div class="card" style="background-image:url(img/3.jpg); background-repeat: no-repeat; background-position: center center;">
+                        <div class="card-content">
+                            <p><span style="font-weight:500;">Procedure on registration and payment of acceptance fees.</span></p>
+                            <button class="btn purple lighten-2">Click Here</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m3 s12">
+                    <div class="card" style="background-image:url(img/3.jpg); background-repeat: no-repeat; background-position: center center;">
+                        <div class="card-content">
+                            <p><span style="font-weight:500;">To download 2017/2018 SCHOOL FEES SCHEDULE.</span></p>
+                            <button class="btn purple lighten-2">Click Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div id="" class="parallax-container">
+                    <div  class="section no-pad-bot">
+                        <div id="" class="container">
+                            <h3 class="header white-text center">Mountain Top University</h3>
+                            <h5 class="header white-text light center">As an undergraduate student here, you will be working with academic staff who are leaders in their fields; academics who are committed to seeing you succeed and will help you to develop your ideas, knowledge and understanding. For Procedure to apply</h5>
+                            <h6 style="font-size:20px" class="header center"><small><i>Empowered to excel</i></small></h6>
+                            <div class="row center">
+                                <a href="#!" id="" class="btn-large purple lighten-2">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax">
+                        <img src="img/6.jpg" alt="Unsplashed background img 1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m3 offset-m1 s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/visitor.jpg"> 
+                        </div>
+                    </div>    
+                </div>
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <p>
+                                The Mountain Top University is envisioned as a dynamic centre of academic excellence in the liberal tradition of execellence for the production of top-rate, morally sound graduates of distinctions who will be globally competitive for outstanding impact on the Nigerian societal and global development. 
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Dr. Daniel K Olukoya <small>Chancellor</small></a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col m3 offset-m1 s12">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="img/vc2.jpg"> 
+                        </div>
+                    </div>    
+                </div>
+                <div class="col m6 s12">
+                    <div class="card">
+                        <div class="card-content cardedit">
+                            <p>
+                                Mountain Top University is an institution established with a mandate to transform and rejuvenate the social-economic and political ethos of the nation. The University operates with the concept of developing the total man and this is encapsulated in the training of body, mind and spirit.
+                            </p>
+                            <ul class="collapsible" data-collapsible="accordion">        <li>
+                                <div class="collapsible-header">Click to Read more...</div>
+                                <div class="collapsible-body">
+                                    <p>The permanent site, Makogi, is about 2 kilometres away from the mini campus. With the eye on the present and not shifting focus from the future, developmental activities at the mini campus have made the University a tourist attraction, giving the landscaping technology embedded in the natural environment that has resulted in beauty, elegance and admiration. This provides an ambience conducive for total education. Our goal is the achievement of excellence and this we know is unattainable by strength; therefore, we approach the spiritual development of our students with diligence, assiduity and every sense of responsibility.</p>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">Prof. Elijah Adebowale Ayolabi <small>Vice-Chancellor</small></a>
+                        </div> 
+                    </div>    
+                </div>                
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div id="" class="parallax-container" style="line-height: 1.5;">
+                    <div  class="section no-pad-bot">
+                        <div id="" class="container">
+                            <h3 class="header white-text center">Post UTME Screening Exercise</h3>
+                            <h5 class="header white-text light center">The Post UTME Screening Exercise of Mountain Top University, Ibafo comes up on the 29th and 30th of August, 2017 by 9a.m. prompt. You are to come with following documents:</h5>
+                            <div class="col m6">
+                                <p>For UTME Students</p>
+                                <ol>
+                                    <li> O' Level Result (Original and 4 photocopies)</li>
+                                    <li>UTME Result printout (Original and 4 photocopies)</li>
+                                    <li>Receipt of Payment for MTU Screening</li>
+                                    <li>Birth Certificate</li>
+                                    <li>Passport Photograph with full Name and Signature of the Candidate on the reverse side of the Photograph</li>
+                                </ol> 
+                            </div>
+                            <div class="col m6">
+                                <p>For Direct Entry Students</p>
+                                <ol>
+                                    <li>The Candidate must have obtained Direct Entry Form from JAMB</li>
+                                    <li>The Candidate must ensure that his/her Transcript from Candidate's institution is forwarded to the Registrar MTU</li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="parallax">
+                        <img src="img/6.jpg" alt="Unsplashed background img 1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col m4 s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="carousel carousel-slider center" data-indicators="true" style="width: 100%; height: 250px;">    
+                                <div class="carousel-item a red white-text" href="#one!">        <h2>First Panel</h2>         
+                                    <p class="white-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.... .</p>    
+                                </div>    
+                                <div class="carousel-item amber white-text" href="#two!">
+                                    <h2>Second Panel</h2>         
+                                    <p class="white-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore... .</p>    </div>
+                                <div class="carousel-item green white-text" href="#three!">        
+                                    <h2>Third Panel</h2> 
+                                    <p class="white-text">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary... </p>    
+                                </div>    
+                                <div class="carousel-item blue white-text" href="#four!">        <h2>Fourth Panel</h2>
+                                    <p class="white-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean... </p>    
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="col m4 s12">
+                    <div class="card" style="height: 300px;">
+                        <div class="card-content" >
+                            <span class="card-title">Events</span>
+                            <div class="events">
+                                <marquee behavior="scroll" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                                    <div>
+                                        <div class="event-item">
+                                            <p class="date-label">
+                                                <span class="month">JUN</span>
+                                                <span class="date-number">21</span>
+                                            </p>
+                                            <div class="details">
+                                                <h6 class="title">UNIVERSITY LECTURE</h6>
+                                                <p class="time"><i class="fa fa-clock-o"></i>04:00PM - 06:00pm</p>
+                                                <p class="location"><i class="fa fa-map-marker"></i>Another Edition of University Lecture is around the corner, prepare to attend.</p>                            
+                                            </div><!--//details-->
+                                        </div><!--event-item-->
+                                        <br>
+                                        <div class="event-item">
+                                            <p class="date-label">
+                                                <span class="month">JUL</span>
+                                                <span class="date-number">06</span>
+                                            </p>
+                                            <div class="details">
+                                                <h5 class="title">MTU PRAYS</h5>
+                                                <p class="time"><i class="fa fa-clock-o"></i>4:00pm - 6:00pm</p>
+                                                <p class="location"><i class="fa fa-map-marker"></i>Another Edition of MTU Prays is around the corner, prepare to attend.</p>                            
+                                            </div><!--//details-->
+                                        </div><!--event-item-->
+                                        <br> 
+
+                                    </div><!--//section-content-->
+                                </marquee>
+                            </div>
+                        </div>
+                    </div></div>
+                <div class="col m4 s12">
+                    <div class="card" style="height: 300px;">
+                        <div class="card-content">
+                            <span class="card-title">MTU E-Learning</span>
+                        </div>
+                        <div class="card-image">
+                            <img src="img/edu.jpg" class="responsive-img" style="height: 200px;"> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="hr1">
+        <div class="container">
+            <div class="row">
+                <div class="col m5 s12">
+                    <h5 class="header h5 center">OUR VISION</h5>
+                    <div class="card bq1">
+                        <p>
+                            The Mountain Top University is envisioned as a dynamic centre of academic excellence in the liberal tradition of excellence for the production of top-rate, morally sound graduates of distinctions who will be globally competitive for outstanding impact on the Nigerian societal and global development.
+                        </p>
+                    </div>
+                </div>
+                <div class="col m7 s12">
+                    <h5 class="header h5 center">OUR MISSION</h5>
+                    <div class="card bq1">
+                        <p>
+                            The mission of Mountain Top University is the provision of excellent facilities for the training of men and women in various academic, professional and vocational disciplines in an atmosphere that will enhance the simultaneous development of their spiritual, mental and physical faculties, in order to produce morally upright and academically sound graduates with specialised skills and value systems, who will be independent, invariably self-employable and who will be able to impact positively on the development (be it in leadership, academic, public and the industrial sectors) of their communities, the Nigerian society and the global community at large.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer section -->
+        <footer class="page-footer purple lighten-2" style="">
+            <div class="container" >
+                <div class="row">
+                    <div class="col l3 m3 s12">
+                        <h5 class="Header white-text">Quick Links</h5>
+                        <hr class="hr">
+                        <ul>
+                            <li><a class="white-text" href="#!">Admissions</a></li>
+                            <li><a class="white-text" href="#!">Life @ Mountain Top</a></li>
+                            <li><a class="white-text" href="#!">About Us</a></li>
+                            <li><a class="white-text" href="#!">Resources</a></li>
+                            <li><a class="white-text" href="#!">Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col l6 m6 s12">
+                        <h5 class="header white-text">Contact Information</h5>
+                        <hr class="hr">
+                        <ul>
+                            <li><a class="white-text" href="#!">Kilometre 12, Lagos-Ibadan Expressway, Prayer City, Ogun State.</a></li>
+                            <li><a class="white-text" href="#!">(+234)8053457707, (+234)7039395024, (+234)8039505596</a></li>
+                            <li><a class="white-text" href="#!">support@mtu.edu.ng </a></li>
+                            <li><a class="white-text" href="#!">Monday - Friday: 9:00 AM to 4:00 PM</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col l3 m3 s12">
+                        <h5 class="header white-text">Social Platforms</h5>
+                        <hr class="hr">
+                        <ul class="left" id="foot">
+                            <li><a class="white-text" href="#!"><span><img src="img/facebook.png" /></span></a></li>
+                            <li><a class="white-text" href="#!"><span><img src="img/twitter.png" /></span></a></li>
+                            <li><a class="white-text" href="#!"><span><img src="img/linkedin.png" /></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by <a class="yellow-text text-lighten-3" href="#!">Innovationaija</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.button-collapse').sideNav();
+            $('.parallax').parallax();
+            $('select').material_select();
+            $('.slider').slider({full_width: true});
+            $('.dropdown-button').dropdown({hover:true});
+            $('.carousel.carousel-slider').carousel();
+
+            setInterval(function() {
+                $('.carousel').carousel('next');
+            }, 4000);
+        });
+    </script>
+</html>
